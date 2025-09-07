@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🔥 Interactive Quote App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#00ffff">
+</head>
+<body>
+    <h1>🔥 Quote Generator</h1>
+
+    <div class="quote-container">
+        <p id="quote">Press the button to get a quote!</p>
+        <p id="author"></p>
+        <div class="buttons">
+            <button id="newQuoteBtn">New Quote</button>
+            <button id="shareBtn">Share</button>
+        </div>
+        <div class="filter">
+            <label>Filter:</label>
+            <select id="filterSelect">
+                <option value="all">All</option>
+                <option value="motivational">Motivational</option>
+                <option value="inspirational">Inspirational</option>
+                <option value="fun">Fun</option>
+                <option value="user">User</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="add-quote">
+        <input type="text" id="newQuoteInput" placeholder="Add your quote">
+        <input type="text" id="newAuthorInput" placeholder="Author (optional)">
+        <select id="newTypeInput">
+            <option value="user">User</option>
+            <option value="motivational">Motivational</option>
+            <option value="inspirational">Inspirational</option>
+            <option value="fun">Fun</option>
+        </select>
+        <button id="addQuoteBtn">Add Quote</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
